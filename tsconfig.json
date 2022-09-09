@@ -8,6 +8,7 @@
     "sourceMap": true,
     "outDir": "dist",
     "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
