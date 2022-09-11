@@ -9,7 +9,9 @@ export const appRouter = trpc
       text: z.string().nullish(),
     }),
     resolve({ input }) {
-      return `Hello ${input.text ?? 'World'}`;
+      return {
+        greeting: `hello ${input?.text ?? 'world'}`,
+      };
     },
   });
 
